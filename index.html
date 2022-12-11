@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>P06 Single Page Application</title>
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$("button").click(function(){
+			$("p:fisrt").addClass("intro");
+		});
+	});
+	</script>
+
+<style type="text/css">
+	body{
+		background-color: skyblue;
+	}
+
+	.container{
+		max-width: 500xp;
+		margin: auto;
+		background-color: grey;
+	
+	}
+	nav ul li{
+		list-style: none;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #222;
+		background-color: lightgrey;
+		float: left;
+		padding: 10xp;
+		font-weight: bold;
+	}
+	.active{
+		background-color: steelblue;
+		color: #fff;
+	}
+</style>
+</head>
+<body>
+	<h1>P06 SPA</h1>
+	<p>Hallo saya Indri Dinda Anjani</p>
+	<p>NIM : 32211509</p>
+	<p>Kelas : KA-KIP-P2</p>
+	<div class="container">
+		<nav class="navigasi">
+			<ul id="">
+				<li><a href="#home" class="list active">Home</a></li>
+				<li><a href="#tentang" class="list">Tentang</a></li>
+				<li><a href="#kontak" class="list">Kontak</a></li>
+			</ul>
+		</nav>
+	</div>	
+
+</body>
+</html>
